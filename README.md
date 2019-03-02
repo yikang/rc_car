@@ -18,17 +18,25 @@ By default, it sets to RC mode.  You can send command from Xbee to switch the mo
 ## command list : 
 
  'c' : switch to command mode 
+
  'q' : quit current mode 
+
  'a' : switch to autonomous mode 
  
  'w' : driving forward 
+
  's' : driving backward 
+
  'a' : turn left 
+
  'd' : turn right 
  
  'i' : switch camera servo, base or angle 
+
  'k' : reset camera angle 
+
  'j' : angle minus 
+
  'l' : angle plus
  
  
