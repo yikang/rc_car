@@ -40,4 +40,29 @@ By default, it sets to RC mode.  You can send command from Xbee to switch the mo
  'l' : angle plus
  
  
+## Use with ros 
 
+Ros package is under `rc_car_ros`.  Main code is `/scripts/drive_car.py`. Topic name `/rc_command`
+
+### setup 
+
+Copy `rc_car_ros` folder to your worksapce. i.e. `~/catkin_ws/src`. 
+
+Build workspace: 
+```
+cd ~/catkin_ws 
+catkin_make
+```
+
+Start the node:
+```
+rosrun rc_car_ros drive_car.py
+```
+
+### usage 
+
+publish commnad to topic :
+```
+# forward w 4 times, and backward s 2 time
+rostopic pub /rc_command std_msgs/String "wwwwss"
+```
